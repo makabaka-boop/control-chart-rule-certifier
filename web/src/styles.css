@@ -1,0 +1,143 @@
+:root {
+  font-family: -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei",
+    sans-serif;
+  color: #1c2833;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f7;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 20px 60px;
+}
+
+h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+
+.sub {
+  margin: 0 0 20px;
+  color: #566573;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2.4fr auto;
+  gap: 12px;
+  align-items: end;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: #566573;
+}
+
+.form input {
+  padding: 8px 10px;
+  border: 1px solid #b3b9bf;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form button {
+  padding: 9px 22px;
+  border: none;
+  border-radius: 5px;
+  background: #1f618d;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.banner {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.banner.ok {
+  background: #e5f5d9;
+  border: 1px solid #7dce82;
+}
+
+.banner.alarm {
+  background: #fde2e1;
+  border: 1px solid #e68b87;
+  color: #7b241c;
+}
+
+.banner.error {
+  background: #fdf2d3;
+  border: 1px solid #d9ac2b;
+  color: #7d5a00;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 12.5px;
+}
+
+.rule-name {
+  margin: 4px 0;
+}
+
+.chart {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.grid {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+  background: #fff;
+  font-size: 13px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.grid th,
+.grid td {
+  border: 1px solid #dfe4e8;
+  padding: 6px 10px;
+  text-align: right;
+}
+
+.grid th:nth-child(4),
+.grid td:nth-child(4),
+.grid th:nth-child(5),
+.grid td:nth-child(5),
+.grid th:nth-child(6),
+.grid td:nth-child(6) {
+  text-align: left;
+}
+
+.grid thead th {
+  background: #eef2f5;
+}
+
+.grid tr.ev {
+  background: #fde2e1;
+  font-weight: 600;
+}
